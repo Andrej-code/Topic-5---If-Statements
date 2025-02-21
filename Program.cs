@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            string magicWord, name, waterTemp;
+            string magicWord, name;
             int age;
-            double waterKelvin, waterCelsius, waterFarhrenit;
+            double waterKelvin, waterCelsius, waterFarhrenit, waterTemp;
 
             //Console.WriteLine("Task 1 - The Magic Word");
             //Console.WriteLine();
@@ -47,29 +47,29 @@
             waterCelsius = 0;
             waterFarhrenit = 32;
             waterKelvin = 272;
-            waterTemp = Console.ReadLine();
+            //waterTemp = Console.ReadLine();
 
             Console.WriteLine("What is the frezzing temperature of water?");
-            Double.TryParse((Console.ReadLine(),out waterTemp);
+            Double.TryParse(Console.ReadLine(),out waterTemp);
             Console.WriteLine();
-            if (waterTemp = waterCelsius)
+            if (waterTemp == waterCelsius)
             {
-                Console.WriteLine("Ahh yes, " + waterCelsius + "degrees Celsius is correct.");
+                Console.WriteLine("Ahh yes, " + waterCelsius + " degrees Celsius is correct.");
             }
                 
 
-            if (waterTemp = waterFarhrenit)
+            else if (waterTemp == waterFarhrenit)
             {
-                Console.WriteLine("Ahh yes, " + waterFarhrenit + "degrees farhenit is correct.");
+                Console.WriteLine("Ahh yes, " + waterFarhrenit + " degrees farhenit is correct.");
             }
       
 
-            if (waterTemp = waterKelvin)
+            else if (waterTemp == waterKelvin)
             {
-                Console.WriteLine("Ahh yes, " + waterKelvin + "degress Kelvin is correct.");
+                Console.WriteLine("Ahh yes, " + waterKelvin + " degress Kelvin is correct.");
             }
-      
 
+            Console.Read();
         }
     }
 }
